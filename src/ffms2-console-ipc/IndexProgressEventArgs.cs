@@ -2,6 +2,7 @@
 
 namespace ffms2.console.ipc
 {
+    [Serializable]
     public sealed class IndexProgressEventArgs : EventArgs
     {
         /// <summary>

@@ -6,8 +6,14 @@ namespace ffms2.console.ipc
     {
         int FrameNumber { get; }
         long PTS { get; }
+        long FilePos { get; }
+        bool KeyFrame { get; }
+        int RepeatPicture { get; }
         char FrameType { get; }
-        byte[] BitmapBytes { get; }
+        Size Resolution { get; }
+        byte[] Data { get; }
+        bool Unwrapped { get; }
         Bitmap ExtractBitmap();
+        IFrame Unwrap();
     }
 }

@@ -2,6 +2,7 @@
 
 namespace ffms2.console.ipc
 {
+    [Serializable]
     public class IndexMismatchException : Exception
     {
         public string File { get; private set; }
