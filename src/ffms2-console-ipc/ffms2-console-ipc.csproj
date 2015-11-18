@@ -47,7 +47,6 @@
     <Compile Include="FrameResizeMethod.cs" />
     <Compile Include="IFrame.cs" />
     <Compile Include="IFrameRetrievalService.cs" />
-    <Compile Include="IndexMismatchException.cs" />
     <Compile Include="IndexProgressEventArgs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

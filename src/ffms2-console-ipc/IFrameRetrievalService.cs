@@ -7,9 +7,11 @@ namespace ffms2.console.ipc
     {
         bool Indexed { get; }
 
-        bool Index(string file, bool useCached = true, string indexCacheFile = null);
+        bool Index(string file, bool useCached = true, string alternateIndexCacheFileLocation = null, string videoCodec = null);
 
         event Action<IndexProgressEventArgs> IndexProgress;
+
+        Exception LastException { get; }
 
         void SetFrameOutputFormat(int width, int height, FrameResizeMethod frameResizeMethod);
 
