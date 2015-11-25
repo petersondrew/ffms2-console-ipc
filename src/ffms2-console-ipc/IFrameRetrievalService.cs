@@ -22,5 +22,7 @@ namespace ffms2.console.ipc
         IFrame GetFrameAtPosition(int trackNumber, long position);
 
         IFrame GetFrameAtTime(int trackNumber, double time);
+
+        void DisplayFrame(IFrame frame, IntPtr windowId);
     }
 }
