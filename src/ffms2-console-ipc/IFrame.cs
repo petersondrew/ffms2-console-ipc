@@ -13,11 +13,7 @@ namespace ffms2.console.ipc
         int RepeatPicture { get; }
         char FrameType { get; }
         Size Resolution { get; }
-        //byte[] Data { get; }
         ReadOnlyCollection<IntPtr> Data { get; }
         ReadOnlyCollection<int> DataLengths { get; }
-        bool Unwrapped { get; }
-        //Bitmap ExtractBitmap();
-        //IFrame Unwrap();
     }
 }
