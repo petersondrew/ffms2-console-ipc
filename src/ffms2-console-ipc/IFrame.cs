@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.ObjectModel;
-using System.Drawing;
+﻿using System.Drawing;
 
 namespace ffms2.console.ipc
 {
     public interface IFrame
     {
+        int TrackNumber { get; }
         int FrameNumber { get; }
         long PTS { get; }
         long FilePos { get; }
@@ -13,7 +12,5 @@ namespace ffms2.console.ipc
         int RepeatPicture { get; }
         char FrameType { get; }
         Size Resolution { get; }
-        ReadOnlyCollection<IntPtr> Data { get; }
-        ReadOnlyCollection<int> DataLengths { get; }
     }
 }
