@@ -43,6 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exceptions\FFMSException.cs" />
+    <Compile Include="Exceptions\FrameDisplayException.cs" />
+    <Compile Include="Exceptions\FrameRetrievalException.cs" />
+    <Compile Include="Exceptions\IndexAccessException.cs" />
+    <Compile Include="Exceptions\IndexCreationException.cs" />
     <Compile Include="Frame.cs" />
     <Compile Include="FramePixelFormat.cs" />
     <Compile Include="FrameResizeMethod.cs" />
