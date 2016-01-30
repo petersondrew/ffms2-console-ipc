@@ -12,8 +12,6 @@ namespace ffms2.console.ipc
 
         event Action<IndexProgressEventArgs> IndexProgress;
 
-        Exception LastException { get; }
-
         /// <summary>
         /// Set the seek handling mode for new video sources
         /// </summary>
