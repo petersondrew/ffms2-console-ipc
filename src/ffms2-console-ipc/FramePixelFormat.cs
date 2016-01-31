@@ -1,8 +1,10 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿using System;
+using System.Diagnostics.CodeAnalysis;
 
 namespace ffms2.console.ipc
 {
     [SuppressMessage("ReSharper", "InconsistentNaming")]
+    [Serializable]
     public enum FramePixelFormat
     {
         None,

@@ -21,9 +21,22 @@ namespace ffms2.console.ipc
         /// </remarks>
         void SetSeekHandling(SeekHandling mode);
 
+        /// <summary>
+        /// Set the output format for retrieved frames
+        /// </summary>
+        /// <param name="width">The width of the picture</param>
+        /// <param name="height">The height of the picture</param>
+        /// <param name="frameResizeMethod">The resize method</param>
+        /// <param name="pixelFormat">The pixel format for the picture</param>
         void SetFrameOutputFormat(int width = 0, int height = 0,
             FrameResizeMethod frameResizeMethod = FrameResizeMethod.Bicubic,
             FramePixelFormat pixelFormat = FramePixelFormat.YV12);
+
+        /// <summary>
+        /// Retrieve a list of all tracks in the index
+        /// </summary>
+        /// <returns></returns>
+        List<ITrack> GetTracks();
 
         /// <summary>
         /// Retrieve a List of all frames in the specified track

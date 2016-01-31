@@ -1,8 +1,11 @@
-﻿namespace ffms2.console.ipc
+﻿using System;
+
+namespace ffms2.console.ipc
 {
     /// <summary>
     /// Control how seeking is handled
     /// </summary>
+    [Serializable]
     public enum SeekHandling
     {
         /// <summary>

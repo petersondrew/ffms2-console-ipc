@@ -54,8 +54,12 @@
     <Compile Include="IFrame.cs" />
     <Compile Include="IFrameRetrievalService.cs" />
     <Compile Include="IndexProgressEventArgs.cs" />
+    <Compile Include="ITrack.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SeekHandling.cs" />
+    <Compile Include="TimeBase.cs" />
+    <Compile Include="Track.cs" />
+    <Compile Include="TrackType.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
